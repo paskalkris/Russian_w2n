@@ -1,6 +1,6 @@
-# Word to Number ![Build Status](https://travis-ci.org/akshaynagpal/w2n.svg?branch=master)  ![codecov](https://codecov.io/gh/akshaynagpal/w2n/branch/master/graph/badge.svg) ![rtdbadge](https://readthedocs.org/projects/w2n/badge/)
+# Word to Number for Russian language
 
-This is a Python module to convert number words (eg. twenty one) to numeric digits (21).
+This is a fork of w2n Python module to convert number words (eg. twenty one) to numeric digits (21).
 It works for positive numbers upto the range of 999,999,999,999 (i.e. billions)
 Below is the installation, usage and other details of this module.
 
@@ -8,13 +8,18 @@ Below is the installation, usage and other details of this module.
 
 Please ensure that you have **updated pip** to the latest version before installing word2number.
 
-You can install the module using Python Package Index using the below command.
+Clone this repo first.
 
-    pip install word2number
+    git clone https://github.com/Oknolaz/Russian_w2n/
+    cd Russian_w2n
 
 Make sure you install all requirements given in requirements.txt
 ```
-pip install -r requirements.txt
+    pip install -r requirements.txt
+```
+And then you should run the setup.py:
+```
+    python3 setup.py install
 ```
 ## Usage
 
@@ -24,32 +29,28 @@ First you have to import the module using the below code.
 
 Then you can use the **word_to_num** method to convert a number-word to numeric digits, as shown below.
 ```
-print(w2n.word_to_num("two million three thousand nine hundred and eighty four"))
+print(w2n.word_to_num("два миллиона три тысячи девятьсот восемьдесят четыре"))
 2003984
 ```
 ```
-print(w2n.word_to_num('two point three')) 
+print(w2n.word_to_num('две целых три десятых')) 
 2.3
 ```
 ```
-print(w2n.word_to_num('112')) 
+print(w2n.word_to_num('сто двенадцать')) 
 112
 ```
 ```
-print(w2n.word_to_num('point one')) 
-0.1
-```
-```
-print(w2n.word_to_num('one hundred thirty-five')) 
+print(w2n.word_to_num('сто тридцать-пять')) 
 135
 ```
 ```
-print(w2n.word_to_num('million million'))
+print(w2n.word_to_num('миллион миллион'))
 Error: Redundant number! Please enter a valid number word (eg. two million twenty three thousand and forty nine)
 None
 ```
 ```
-print(w2n.word_to_num('blah'))
+print(w2n.word_to_num('бля'))
 Error: No valid number words found! Please enter a valid number word (eg. two million twenty three thousand and forty nine)
 None
 ```
@@ -59,7 +60,8 @@ Please ensure that you have updated pip to the latest version before installing 
 
 If you find any bugs/errors in the usage of above code, please raise an issue through [Github](http://github.com/akshaynagpal/w2n). If you don't know how to use Github or raise an issue through it, I suggest that you should learn it. Else, send an email to akshay2626@gmail.com with a clear example that can reproduce the issue.
 
-## Contributors
+## Thanks
+- Akshay Nagpal [akshaynagpal](https://github.com/akshaynagpal)
 - Ben Batorsky [bpben](https://github.com/bpben)
 - Alex [ledovsky](https://github.com/ledovsky)
 - Tal Yarkoni [tyarkoni](https://github.com/tyarkoni)
