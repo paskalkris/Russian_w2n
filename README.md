@@ -54,11 +54,6 @@ print(w2n.word_to_num('бля'))
 Error: No valid number words found! Please enter a valid number word (eg. two million twenty three thousand and forty nine)
 None
 ```
-## Bugs/Errors
-
-Please ensure that you have updated pip to the latest version before installing word2number.
-
-If you find any bugs/errors in the usage of above code, please raise an issue through [Github](http://github.com/akshaynagpal/w2n). If you don't know how to use Github or raise an issue through it, I suggest that you should learn it. Else, send an email to akshay2626@gmail.com with a clear example that can reproduce the issue.
 
 ## Thanks
 - Akshay Nagpal [akshaynagpal](https://github.com/akshaynagpal)
