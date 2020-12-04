@@ -15,11 +15,11 @@ Clone this repo first.
 
 Make sure you install all requirements given in requirements.txt
 ```
-    pip install -r requirements.txt
+ pip install -r requirements.txt
 ```
 And then you should run the setup.py:
 ```
-    python3 setup.py install
+ python3 setup.py install
 ```
 ## Usage
 
