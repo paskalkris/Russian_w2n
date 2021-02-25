@@ -108,7 +108,7 @@ def word_to_num(number_sentence):
 
     # removing and, & etc.
     for word in split_words:
-        if word in american_number_system:
+        if word in russian_number_system:
             clean_numbers.append(word)
 
     # Error message if the user enters invalid input!
