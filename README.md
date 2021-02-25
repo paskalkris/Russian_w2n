@@ -25,7 +25,7 @@ And then you should run the setup.py:
 
 First you have to import the module using the below code.
 
-    from word2number import w2n
+    from ru_word2number import w2n
 
 Then you can use the **word_to_num** method to convert a number-word to numeric digits, as shown below.
 ```
