@@ -31,6 +31,14 @@ russian_number_system = {
     'восемьдесят': 80,
     'девяносто': 90,
     'сто': 100,
+    "двести": 200,
+    "триста": 300,
+    "четыреста": 400,
+    "пятьсот": 500,
+    "шестьсот": 600,
+    "семьсот": 700,
+    "восемьсот": 800,
+    "девятьсот": 900,
     'тысяча': 1000,
     'миллион': 1000000,
     'миллиард': 1000000000,
@@ -58,10 +66,7 @@ def number_formation(number_words):
     elif len(numbers) == 3:
         return numbers[0] * numbers[1] + numbers[2]
     elif len(numbers) == 2:
-        if 100 in numbers:
-            return numbers[0] * numbers[1]
-        else:
-            return numbers[0] + numbers[1]
+        return numbers[0] + numbers[1]
     else:
         return numbers[0]
 
